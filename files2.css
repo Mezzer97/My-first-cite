@@ -1,0 +1,213 @@
+/* Общие настройки */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Шапка */
+header {
+    background: url('path/to/your/image.jpg') center/cover no-repeat;
+    padding: 3rem 0;
+color: #00FFFF;
+text-shadow: 
+0 0 5px #00FFFF,0 0 10px #0f37bd, 0 0 20px #a012a0;
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 1rem 0 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Разделы */
+section, footer {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2, footer h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Раздел "Обо мне" */
+#about img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about li {
+    background: #ecf0f1;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid #3498db;
+}
+
+/* Проекты */
+.project {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.project a {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+.project a:hover {
+    background: #2980b9;
+}
+
+/* Контакты и форма */
+footer {
+    background-color: #34495e;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0.7rem 0;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #16a085;
+}
+
+form {
+    margin-top: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+form h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    section, footer {
+        padding: 2rem 0.5rem;
+    }
+}
+
+.skill { margin-bottom: 1rem; }
+.skill p { margin: 0 0 0.5rem; }
+.progress {
+    height: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bar {
+    height: 100%;
+    background: #3498db;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
